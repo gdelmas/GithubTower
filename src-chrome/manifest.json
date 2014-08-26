@@ -8,7 +8,7 @@
     "icons": {
         "128": "icon.png"
     },
-    "version": "1.0.1",
+    "version": "1.0.2",
 
     "content_scripts": [
         {
