@@ -1,7 +1,7 @@
 (function() {
-    var buttonElement = document.querySelector("a[data-url^='github-mac://']");
+    var buttonElement = document.querySelector("a[href^='x-github-client://']");
 
     if ( buttonElement != null ) {
-        buttonElement.href = buttonElement.getAttribute("data-url");
+       buttonElement.href = "github-mac://openRepo/" + buttonElement.getAttribute("href").substring(27);
     }
 }());
