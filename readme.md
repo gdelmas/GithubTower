@@ -1,24 +1,21 @@
-**Github Tower** is a lightweight browser extension that allows you to use Github's "Clone in Desktop" button to open [Tower.app](http://www.git-tower.com) without the need of having the Github.app installed. The extension is available for Google Chrome and Safari.
+**Github Tower** is a lightweight browser extension that links Github's "Open in Desktop" button to [Tower.app](http://www.git-tower.com) without the need of ever installing the Github Desktop Application. The extension is available for Chrome and Safari.
 
-# Setup
-### Step 1: Download
-Download and unzip [GithubTower.zip](https://github.com/gdelmas/GithubTower/releases).
+![](screenshot.png)
 
-### Step 2: Google Chrome
-1. Click the Chrome *hamburger* menu icon on the browser toolbar.
-2. Select Tools > Extensions.
-3. Drag the extension file `GithubTower.crx` onto the Extensions page.
+# Installation
 
-### Step 2: Safari
-Open `GithubTower.safariextz`.
+### Chrome
+Install the Extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/github-tower/ipgffdnnaanlcjlmpmmllieefmfjcbml) by clicking "Add to Chrome".
 
-### Step 3: Tower.app
-In [Tower.app](http://www.git-tower.com) > Settings > Integration select "Tower" to open repositories from github.com.
+### Safari
+*Installation from Safari Extensions Gallery coming soon.*
 
-# Lightweight
-Github's "Clone in Desktop" button only works if the official Github.app is installed on OS X. The [Github.app](https://mac.github.com) spawns a [helper "GitHub Conduit.app"](https://help.github.com/articles/github-conduit) which will always be running on the system. This helper has a webserver constantly listening for requests on the users local machine port 25035. If the Github website can reach this server it changes the "Clone in Desktop" button links to open in the users local Git App instead of redirecting to https://mac.github.com.
 
-This browser extensions eliminates the need to have a local webserver process running by injecting [7 lines of code](https://github.com/gdelmas/GithubTower/blob/master/src-safari/GithubTower.safariextension/main.js) only into Github's website.
+
+# Rationale
+Github's "Open in Desktop" button only works if you are logged in to your account with the Github Desktop Application. Logged out users can not use the "Open in Desktop" button. At this point in time Tower also does not register the right URL scheme. The scheme Github links to depends on the last used version of Github's desktop application.
+
+This browser extensions eliminates the need to be logged into Github and the Github Desktop Application by running [23 lines of code](https://github.com/gdelmas/GithubTower/blob/master/src-safari/GithubTower.safariextension/main.js) only on Github's website.
 
 # Tower
 Tower 2 is a wonderful Git client for OS X. It brings all of Git’s powerful features to your desktop. Try it out here: [http://www.git-tower.com](http://www.git-tower.com)
