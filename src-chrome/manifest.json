@@ -2,13 +2,13 @@
     "manifest_version": 2,
 
     "name": "Github Tower",
-    "description": "Use Github's \"Clone in Desktop\" button with Tower",
+    "description": "Use Github's \"Open in Desktop\" Button with Tower",
     "author": "Gerard Delmàs",
     "homepage_url": "https://github.com/gdelmas/GithubTower",
     "icons": {
         "128": "icon.png"
     },
-    "version": "1.0.2",
+    "version": "1.1.0",
 
     "content_scripts": [
         {

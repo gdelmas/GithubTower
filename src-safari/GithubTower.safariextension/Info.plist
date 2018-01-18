@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Gerard Delmàs</string>
 	<key>Builder Version</key>
-	<string>9537.78.2</string>
+	<string>12604.4.7.1.6</string>
 	<key>CFBundleDisplayName</key>
 	<string>Github Tower</string>
 	<key>CFBundleIdentifier</key>
@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.2</string>
+	<string>1.1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>Chrome</key>
@@ -29,7 +29,9 @@
 		</dict>
 	</dict>
 	<key>Description</key>
-	<string>Use Github's "Clone in Desktop" button with Tower</string>
+	<string>Use Github's "Open in Desktop" Button with Tower</string>
+	<key>DeveloperIdentifier</key>
+	<string>R448YUR7UE</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
