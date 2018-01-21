@@ -7,13 +7,13 @@
 	<key>Builder Version</key>
 	<string>12604.4.7.1.6</string>
 	<key>CFBundleDisplayName</key>
-	<string>Github Tower</string>
+	<string>Clone to Tower for Github</string>
 	<key>CFBundleIdentifier</key>
 	<string>de.dreamlab.githubtower</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1.0</string>
+	<string>1.1.1</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>Chrome</key>
