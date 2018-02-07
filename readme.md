@@ -1,4 +1,4 @@
-**Github Tower** is a lightweight browser extension that links Github's "Open in Desktop" button to [Tower.app](http://www.git-tower.com) without the need of ever installing the Github Desktop Application. The extension is available for Chrome and Safari.
+**Clone to Tower for Github** is a lightweight browser extension that links Github's "Open in Desktop" button to [Tower.app](http://www.git-tower.com) without the need of ever installing the Github Desktop Application. The extension is available for Chrome and Safari.
 
 ![](screenshot.png)
 
@@ -8,7 +8,7 @@
 Install the Extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/github-tower/ipgffdnnaanlcjlmpmmllieefmfjcbml) by clicking "Add to Chrome".
 
 ### Safari
-*Installation from Safari Extensions Gallery coming soon.*
+Install the Extenstion from the [Safari Extensions Gallery](https://safari-extensions.apple.com/details/?id=de.dreamlab.githubtower-R448YUR7UE) by clicking "Install now". 
 
 
 
