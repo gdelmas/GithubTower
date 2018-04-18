@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Gerard Delmàs</string>
 	<key>Builder Version</key>
-	<string>12604.4.7.1.6</string>
+	<string>12605.1.33.1.3</string>
 	<key>CFBundleDisplayName</key>
 	<string>Clone to Tower for Github</string>
 	<key>CFBundleIdentifier</key>
@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1.1</string>
+	<string>1.2.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>Chrome</key>
