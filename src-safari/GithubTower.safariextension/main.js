@@ -8,6 +8,7 @@
     buttonElement.removeAttribute('href');
     buttonElement.innerText = 'Open in Tower';
     buttonElement.setAttribute('aria-label', buttonElement.getAttribute('aria-label').replace('GitHub Desktop', 'Tower'));
+    buttonElement.removeAttribute('data-open-app');
 
     buttonElement.addEventListener('click', function(event) {
         event.preventDefault();
