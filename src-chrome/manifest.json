@@ -1,6 +1,10 @@
 {
     "manifest_version": 2,
 
+    "permissions": [
+        "activeTab",
+        "declarativeContent"
+    ],
     "name": "Clone to Tower for Github",
     "description": "Use Github's \"Open in Desktop\" Button with Tower",
     "author": "Gerard Delmàs",
@@ -8,12 +12,10 @@
     "icons": {
         "128": "icon.png"
     },
-    "version": "1.2.0",
-
-    "content_scripts": [
-        {
-            "matches": ["*://github.com/*"],
-            "js": ["main.js"]
-        }
-    ]
+    "version": "2.0.0",
+    "content_scripts": [{
+        "js": ["main.js"],
+        "matches": ["https://*.github.com/*"],
+        "all_frames": true
+    }]
 }
