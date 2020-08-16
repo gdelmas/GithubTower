@@ -1,24 +1,27 @@
 (function() {
-    var buttonElement = document.querySelector("a.get-repo-btn");
+    const divElement = document.querySelector('.get-repo-modal div ul');
+    if (!divElement) { return; }
 
-    if ( buttonElement === null ) {
-        return;
-    }
+    const linkElement = divElement.children[0].querySelector('a');
 
-    buttonElement.removeAttribute('href');
-    buttonElement.innerText = 'Open in Tower';
-    buttonElement.setAttribute('aria-label', buttonElement.getAttribute('aria-label').replace('GitHub Desktop', 'Tower'));
-    buttonElement.removeAttribute('data-open-app');
+    linkElement.removeAttribute('href');
+    linkElement.innerText = 'Open in Tower';
+    linkElement.removeAttribute('data-open-app');
+    linkElement.style.cursor = 'pointer';
 
-    buttonElement.addEventListener('click', function(event) {
+    linkElement.addEventListener('click', event => {
         event.preventDefault();
 
-        var repoModalElement = buttonElement.parentElement.parentElement;
-        var inputElements = repoModalElement.querySelectorAll('input[type="text"]');
+        const data = JSON.parse(linkElement.getAttribute('data-hydro-click'));
+        let repositoryURL = data.payload.originating_url;
+
+        var repoModalElement = document.querySelector('.get-repo-modal');
         var isSSH = repoModalElement.classList.contains('on');
 
-        var activeInputElement = inputElements[isSSH ? 1 : 0];
+        if (isSSH) {
+            repositoryURL = repositoryURL.replace('https://github.com/', 'git@github.com:');
+        }
 
-        window.location.href = 'gittower://openRepo/' + encodeURI(activeInputElement.value);
+        window.location.href = 'gittower://openRepo/' + encodeURI(repositoryURL);
     });
 }());
